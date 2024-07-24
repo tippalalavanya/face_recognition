@@ -20,7 +20,7 @@ shrada_encoding = face_recognition.face_encodings(shrada_image)[0]
 
 known_face_encoding = [csir_encoding,shrada_encoding,lavanya_encoding]
 
-known_faces_names = ["csir","shrada","lavanya"]
+known_faces_names = ["csir","shrada","lavanya","any picture file_names"]
 students = known_faces_names.copy()
 
 face_locations = []
