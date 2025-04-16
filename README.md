@@ -1,4 +1,4 @@
-ogin Process:
+login Process:
 OpenCV:
 For capturing and pre-processing face images.
 
