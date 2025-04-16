@@ -1,0 +1,134 @@
+<html>
+<head>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<center>
+<div id="js_timer">
+  <div id="timer">
+   00:00
+  </div>
+</center>
+<h3>
+
+1. What does an x=a or b assignment do in python?
+<br><input type="radio" name="question1">Error<br>
+ <input type="radio" name="question1">if bool(a) and bool(b) are true, returns 1<br>
+ <input type="radio" name="question1"  id="correct3">if bool(a) is false, x is b<br>
+ <input type="radio" name="question1">if bool(a) and bool(b) are false, returns 0<br><br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+2. How would you randomise items on a list with python?<br>
+<input type="radio" name="question2">random.SystemRandom()<br>
+<input type="radio" name="question2">list.random(list name)<br>
+<input type="radio" name="question2">not possible<br>
+<input type="radio" name="question2"  id ="correct4">random.shuffle()<br><br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+3. can you change order of items of a tuple<br>
+<input type="radio" name="question3">A tuple is immutable<br>
+   <input type="radio" name="question3">Yes, using random.sample()<br>
+   <input type="radio" name="question3"  id ="correct3">both of the above<br>
+   <input type="radio" name="question3">none of the above<br><br><br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+4. which function under the functools module is used to create a new function with preset augments?<br>
+<input type="radio" name="question4">functools.new<br>
+<input type="radio" name="question4">functools.function()<br>
+<input type="radio" name="question4">functools.new()<br>
+<input type="radio" name="question4" id ="correct4">functools.partial<br><br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+5. What is full form of PEP?<br>
+<input type="radio" name="question5">Python Exclusive Program<br>
+<input type="radio" name="question5">Python Environment Packages<br>
+<input type="radio" name="question5">Python Enhanced Package<br>
+<input type="radio" name="question5" id ="correct4">Python Enhancement Proposal<br><br>
+<br>
+<br>
+
+<input type="submit" name="submit" value="Next" onclick="result()">
+<script type="text/javascript">
+     function result1()
+     {
+                 var score=0;
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct4").checked)
+                 {
+                   score++;      
+                 }
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct4").checked)
+                 {
+                   score++;
+                 }
+                 if (document.getElementById("correct4").checked)
+                 {
+                   score++;
+                 }
+                 var m1= sessionStorage.getItem("s1"); 
+                 let t3=parseInt(m1)+parseInt(score); 
+                 sessionStorage.setItem("s3", t3);   
+                 window.open('Result.html','_self');
+    /*      if(score<=4)
+          {
+          document.write("<html>")
+          document.write("<head>")
+          document.write("<link rel=\"stylesheet\" href=\"css.css\">")
+          document.write("</head>")
+          document.write("<body>")
+          document.write("<h3>")
+          document.write("1. What will be the output of the following Python function?<br>&nbsp;len([\"hey\",2, 4, 6])<br><input type=\"radio\" name=\"question1\">Error<br>")
+          document.write("<input type=\"radio\" name=\"question1\">3<br>")
+          document.write("<input type=\"radio\" name=\"question1\"  id \"correct3\">4<br>")
+          document.write("<input type=\"radio\" name=\"question1\">6<br><br><br>")         
+
+          document.write("2. What is the output?<br>&nbsp;s=set([0,1,2,3,3,3,4,4])<br>&nbsp;print(len(s))<br><input type=\"radio\" name=\"question2\">8<br>")
+          document.write("<input type=\"radio\" name=\"question1\">7<br>")
+          document.write("<input type=\"radio\" name=\"question1\">6<br>")
+          document.write("<input type=\"radio\" name=\"question1\"  id \"correct4\">5<br><br><br>")
+
+          document.write("quest3<br><input type=\"radio\" name=\"question3\">a<br>")
+          document.write("<input type=\"radio\" name=\"question1\">b<br>")
+          document.write("<input type=\"radio\" name=\"question1\">c<br>")
+          document.write("<input type=\"radio\" name=\"question1\">d<br><br><br>")
+
+          document.write("quest4<br><input type=\"radio\" name=\"question4\">a<br>")
+          document.write("<input type=\"radio\" name=\"question1\">b<br>")
+          document.write("<input type=\"radio\" name=\"question1\">c<br>")
+          document.write("<input type=\"radio\" name=\"question1\">d<br><br><br>")
+
+          document.write("quest5<br><input type=\"radio\" name=\"question5\">a<br>")
+          document.write("<input type=\"radio\" name=\"question1\">b<br>")
+          document.write("<input type=\"radio\" name=\"question1\">c<br>")
+          document.write("<input type=\"radio\" name=\"question1\">d<br>")
+          document.write("</h3>")
+          document.write("</body>")
+          document.write("</html>")
+          }*/
+       }
+</script>
+<script type="text/javascript">
+       var timer;
+       var ele=document.getElementById("timer");
+       (function(){  
+         var sec=0;
+         timer=setInterval(()=>{
+           ele.innerHTML="00:"+sec;
+           sec++;
+         }, 1000)
+       })()
+      </script>
+</h3>
+</body>
+</html>

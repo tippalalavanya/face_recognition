@@ -1,0 +1,110 @@
+<html>
+<head>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<center>
+<div id="js_timer">
+  <div id="timer">
+   00:00
+  </div>
+</center>
+<h3>
+
+1. Which is not a legal variable name?<br><br>
+<input type="radio" name="question1">Myvar<br>
+ <input type="radio" name="question1">_myvar<br>
+ <input type="radio" name="question1"  id="correct3">my-var<br>
+ <input type="radio" name="question1">none of these<br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+2. How do you create a variable with numeric value 5?<br><br>
+<input type="radio" name="question2">x=int(5)<br>
+<input type="radio" name="question2">x=5<br>
+<input type="radio" name="question2"  id ="correct3">Both of the above<br>
+<input type="radio" name="question2">None of the above<br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+3. Which function is used to get the version of python?<br><br>
+   <input type="radio" name="question3">system.getversion<br>
+   <input type="radio" name="question3" id ="correct2">sys.version(1)<br>
+   <input type="radio" name="question3">system.get<br>
+   <input type="radio" name="question3">None<br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+4. Which of the following is the built in function in python?<br><br>
+<input type="radio" name="question4">ntr()<br>
+<input type="radio" name="question4">sqrt()<br>
+<input type="radio" name="question4" id ="correct3">print()<br>
+<input type="radio" name="question4">All of the above<br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+5. What is correct syntax to output the type of a variable or object in Python?<br>
+<input type="radio" name="question5">print(typeof x)<br>
+<input type="radio" name="question5">print(typeof(x))<br>
+<input type="radio" name="question5">printf(typeof(x))<br>
+<input type="radio" name="question5" id ="correct4">print(type(x))<br><br>
+<br>
+
+<input type="submit" name="submit" value="Next" onclick="result()">
+<script type="text/javascript">
+     function result()
+     {
+                 var score=0;
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;      
+                 }
+                 if (document.getElementById("correct2").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;
+                 }
+                 if (document.getElementById("correct4").checked)
+                 {
+                   score++;
+                 }
+                 /*
+                 var s = sessionStorage.getItem("sc");
+        	 //t3=t2+score; 
+                 var t = score;;
+                 sessionStorage.setItem("sc", score);   
+                 window.open('Result5.html','_self');*/
+                 var m1= sessionStorage.getItem("s1"); 
+                 let t3=parseInt(m1)+parseInt(score); 
+                 sessionStorage.setItem("s3", t3);   
+                 window.open('Result.html','_self');
+       }  
+
+</script>
+<script type="text/javascript">
+       var timer;
+       var ele=document.getElementById("timer");
+       (function(){  
+         var sec=0;
+         timer=setInterval(()=>{
+           ele.innerHTML="00:"+sec;
+           sec++;
+         }, 1000)
+       })()
+      </script>
+</h3>
+<script type="text/javascript">
+/*
+var s = sessionStorage.getItem("sc");
+document.write(s);
+*/
+</script>
+</body>
+</html>

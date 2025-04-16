@@ -1,0 +1,103 @@
+<html>
+<head>
+<link rel="stylesheet" href="css.css">
+<!--<h1>3rd page</h1>-->
+</head>
+<body>
+<center>
+<div id="js_timer">
+  <div id="timer">
+   00:00
+  </div>
+</center>
+
+<h3>
+
+1. What will be the output of the following Python function?<br>&nbsp;len(["hey",2, 4, 6])
+<br><input type="radio" name="question1">Error<br>
+ <input type="radio" name="question1">3<br>
+ <input type="radio" name="question1"  id="correct3">4<br>
+ <input type="radio" name="question1">6<br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+2. What is the output?<br>&nbsp;s=set([0,1,2,3,3,3,4,4])<br>&nbsp;print(len(s))<br>
+<input type="radio" name="question2">8<br>
+<input type="radio" name="question2">7<br>
+<input type="radio" name="question2">6<br>
+<input type="radio" name="question2" id ="correct4">5<br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+3. What will be the datatype of the var in the below code snippet?<br>
+   var = 10<br>
+   print(type(var))<br>
+   var = "Hello"<br>
+   print(type(var))<br>
+   <input type="radio" name="question3">String, var<br>
+   <input type="radio" name="question3">var, var<br>
+   <input type="radio" name="question3" id ="correct3">int, String<br>
+   <input type="radio" name="question3">char, int<br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+4. In which language is Python written?<br>
+<input type="radio" name="question4">English<br>
+<input type="radio" name="question4">PHP<br>
+<input type="radio" name="question4" id ="correct3">C<br>
+<input type="radio" name="question4">None of the above<br><br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+5. Which one of the following is the correct extension of the Python file?<br>
+<input type="radio" name="question5">.ppt<br>
+<input type="radio" name="question5" id ="correct2">.py<br>
+<input type="radio" name="question5">.pt<br>
+<input type="radio" name="question5">no extension<br><br>
+<br>
+
+<input type="submit" name="submit" value="Next" onclick="result()">
+<script type="text/javascript">
+     function result()
+     {
+                 var score=0;
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct4").checked)
+                 {
+                   score++;      
+                 }
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;
+                 }
+                 if (document.getElementById("correct2").checked)
+                 {
+                   score++;
+                 }
+                 var m1= sessionStorage.getItem("s1"); 
+                 let t3=parseInt(m1)+parseInt(score); 
+                 sessionStorage.setItem("s3", t3);   
+                 window.open('Result.html','_self');
+       }  
+</script>
+<script type="text/javascript">
+       var timer;
+       var ele=document.getElementById("timer");
+       (function(){  
+         var sec=0;
+         timer=setInterval(()=>{
+           ele.innerHTML="00:"+sec;
+           sec++;
+         }, 1000)
+       })()
+      </script>
+</h3>
+</body>
+</html>

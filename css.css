@@ -1,0 +1,15 @@
+body {background-color: Gainsboro; h3}
+h1 {
+  color: gray; text-align: center; font-size: 300%;
+}
+h2 {
+  font-size: 250%; color: gray;
+}
+#timer{
+  color: gray; text-align: right; font-size: 200%;
+}
+@media print {
+script {
+  page-break-before: always;
+}
+}

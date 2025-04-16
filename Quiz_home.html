@@ -1,0 +1,325 @@
+<html>
+<head>
+<link rel="stylesheet" href="css.css">
+<h1>QUIZ</h1>
+</head>
+<body>
+<center>
+<div id="js_timer">
+  <div id="timer">
+   00:00
+  </div>
+</center>
+<h2>Python</h2>
+<h3>
+<script type="text/javascript">
+     alert("Click OK to begin");
+</script>
+
+1. Which of the following is the correct extension of the Python file?
+<br>
+<input type="radio" name="question1">.python<br>
+<input type="radio" name="question1">.pl<br>
+<input type="radio" name="question1" id="correct3">.py<br>
+<input type="radio" name="question1">.p<br>
+<br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+2. Is python case sensitive when dealing with identifiers?
+<br>
+<input type="radio" name="question2">no<br>
+<input type="radio" name="question2" id="correct2">yes<br>
+<input type="radio" name="question2">machine dependent<br>
+<input type="radio" name="question2">none of the mentioned<br>
+<br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+3. Is Python code compiled or interpreted?
+<br>
+<input type="radio" name="question3" id="correct1">Python code is both compiled and interpreted<br>
+<input type="radio" name="question3">Python code is neither compiled nor interpreted<br>
+<input type="radio" name="question3">Python code is only compiled<br>
+<input type="radio" name="question3">Python code is only interpreted<br>
+<br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+4. Which of the following is used to define a block of code in Python language?
+<br>
+<input type="radio" name="question4">Brackets<br>
+<input type="radio" name="question4">Key<br>
+<input type="radio" name="question4" id="correct3">Indentation<br>
+<input type="radio" name="question4">All of the mentioned<br>
+<br>
+------------------------------------------------------------------------------------------------------------------
+<br>
+<br>
+5. Which keyword is used for function in Python language?
+<br>
+<input type="radio" name="question5">Function<br>
+<input type="radio" name="question5">Define<br>
+<input type="radio" name="question5">func<br>
+<input type="radio" name="question5" id="correct4">def<br>
+<br>
+<br>
+<br>
+
+<input type="submit" name="submit" value="Next" onclick="result()">
+<script type="text/javascript">
+function result()
+    {  
+       var score=0;
+       if (document.getElementById("correct3").checked)
+       {
+         score++;       
+       }
+       if (document.getElementById("correct2").checked)
+       {
+         score++;      
+       }
+       if (document.getElementById("correct1").checked)
+       {
+         score++;       
+       }
+       if (document.getElementById("correct3").checked)
+       {
+         score++;
+       }
+       if (document.getElementById("correct2").checked)
+       {
+         score++;
+       }
+       var t1=score;
+       var o=t1;
+       sessionStorage.setItem("s0", t1);
+        
+       if(score>=4)                                    <!--//medium-->
+       {  
+          document.write("<html>")
+          document.write("<head>")
+          document.write("<link rel=\"stylesheet\" href=\"css.css\">")
+          document.write("</head>")
+          document.write("<body>")
+          document.write("<h3>")
+          document.write("<br>1. What will be the output of the following Python code?<br>&nbsp;i=1<br>&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;if i%3 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i)<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;+&nbsp;&nbsp;=&nbsp;&nbsp;1<br><input type=\"radio\" name=\"question1\">1 2 3<br>")
+          document.write("<input type=\"radio\" name=\"question1\" id=\"correct2\">error<br>")
+          document.write("<input type=\"radio\" name=\"question1\">1 2<br>")
+          document.write("<input type=\"radio\" name=\"question1\">none of the above<br><br>")
+          document.write("------------------------------------------------------------------------------------------------------------------<br><br>")
+
+          document.write("2. What will be the value of the following Python expression?<br>&nbsp;4 + 3 % 5<br><input type=\"radio\" name=\"question2\" id=\"correct1\">7<br>")
+          document.write("<input type=\"radio\" name=\"question2\">4<br>")
+          document.write("<input type=\"radio\" name=\"question2\">4.6<br>")
+          document.write("<input type=\"radio\" name=\"question2\">none of the above<br><br>")
+          document.write("------------------------------------------------------------------------------------------------------------------<br><br>")
+
+          document.write("3. What will be the output of the following Python code?<br>&nbsp;l=[1, 0, 2, 0, 'hello', '', []]<br>&nbsp;x=list(filter(bool, l))<br>&nbsp;print(x)<br><input type=\"radio\" name=\"question3\">[1, 0, 2, ‘hello’, ”, []]<br>")
+          document.write("<input type=\"radio\" name=\"question3\">error<br>")
+          document.write("<input type=\"radio\" name=\"question3\" id=\"correct3\">[1, 2, ‘hello’]<br>")
+          document.write("<input type=\"radio\" name=\"question3\">[2, ‘hello’, ”, []]<br><br>")
+          document.write("------------------------------------------------------------------------------------------------------------------<br><br>")
+
+          document.write("4. What will be the output of the following Python function?<br>&nbsp;min(max(False,-3,-4), 2,7)<br><input type=\"radio\" name=\"question4\">-4<br>")
+          document.write("<input type=\"radio\" name=\"question4\">-3<br>")
+          document.write("<input type=\"radio\" name=\"question4\">2<br>")
+          document.write("<input type=\"radio\" name=\"question4\" id=\"correct4\">False<br><br>")
+          document.write("------------------------------------------------------------------------------------------------------------------<br><br>")
+
+          document.write("5. What will be the output of the following Python expression if x=56.236?<br>&nbsp;print(\"%.2f\"%x)<br><input type=\"radio\" name=\"question5\">error<br>")
+          document.write("<input type=\"radio\" name=\"question5\">56.23<br>")
+          document.write("<input type=\"radio\" name=\"question5\">56.0000<br>")
+          document.write("<input type=\"radio\" name=\"question5\"  id=\"correct4\">56.24<br><br><br>")	 
+	  document.write("<input type=\"submit\" name=\"submit1\" value=\" Next\" onclick=\"result1()\">")
+	  //document.write("<input type=\"submit\" name=\"submit1\" value=\" Next \" onclick=\"window.open('Quiz_Page3.html','_self');\">")
+
+   	
+	  document.write("<br>")
+	  document.write("<br>")
+	  document.write("<br>")
+          document.write("</h3>")
+          document.write("</body>")
+          document.write("</html>")          
+       }
+       else {
+        document.write("<html>");
+        document.write("<head>");
+        document.write("<link rel=\"stylesheet\" href=\"css.css\">");
+        document.write("<title>Easy Quiz</title>");
+        document.write("</head>");
+        document.write("<body>");
+        document.write("<h3>");
+    
+        document.write("1. Which of the following is the truncation division operator in Python?<br>");
+        document.write("<input type=\"radio\" name=\"question1\">|<br>");
+        document.write("<input type=\"radio\" name=\"question1\" id=\"correct2\">//<br>");
+        document.write("<input type=\"radio\" name=\"question1\">/<br>");
+        document.write("<input type=\"radio\" name=\"question1\">%<br><br>");
+        document.write("------------------------------------------------------------------------------------------------------------------<br><br>");
+    
+        document.write("2. In Python, before type casting, by default every input() is considered as:<br>");
+        document.write("<input type=\"radio\" name=\"question2\" id=\"correct1\">string<br>");
+        document.write("<input type=\"radio\" name=\"question2\">int<br>");
+        document.write("<input type=\"radio\" name=\"question2\">float<br>");
+        document.write("<input type=\"radio\" name=\"question2\">none of the above<br><br>");
+        document.write("------------------------------------------------------------------------------------------------------------------<br><br>");
+    
+        document.write("3. What is the order of precedence in Python?<br>");
+        document.write("<input type=\"radio\" name=\"question3\">Exponential, Parentheses, Multiplication, Division, Addition, Subtraction<br>");
+        document.write("<input type=\"radio\" name=\"question3\">Exponential, Parentheses, Division, Multiplication, Addition, Subtraction<br>");
+        document.write("<input type=\"radio\" name=\"question3\">Parentheses, Exponential, Multiplication, Division, Subtraction, Addition<br>");
+        document.write("<input type=\"radio\" name=\"question3\" id=\"correct4\">Parentheses, Exponential, Multiplication, Division, Addition, Subtraction<br><br>");
+        document.write("------------------------------------------------------------------------------------------------------------------<br><br>");
+    
+        document.write("4. What are the values of the following Python expressions?<br>&nbsp;2*(32)<br>&nbsp;(2)**2<br>&nbsp;2*2<br>");
+        document.write("<input type=\"radio\" name=\"question4\" id=\"correct1\">512, 4, 4<br>");
+        document.write("<input type=\"radio\" name=\"question4\">512, 512, 512<br>");
+        document.write("<input type=\"radio\" name=\"question4\">4, 4, 4<br>");
+        document.write("<input type=\"radio\" name=\"question4\">64, 64, 64<br><br>");
+        document.write("------------------------------------------------------------------------------------------------------------------<br><br>");
+    
+        document.write("5. Which of the following characters is used to give single-line comments in Python?<br>");
+        document.write("<input type=\"radio\" name=\"question5\">//<br>");
+        document.write("<input type=\"radio\" name=\"question5\" id=\"correct1\">#<br>");
+        document.write("<input type=\"radio\" name=\"question5\">!<br>");
+        document.write("<input type=\"radio\" name=\"question5\">/*<br><br><br>");
+        document.write("<input type=\"submit\" name=\"submit2\" value=\"Next\" onclick=\"result2()\">");
+    
+        document.write("</h3>");
+        document.write("</body>");
+        document.write("</html>");
+    }
+    
+}
+     
+        
+</script>
+<script type="text/javascript">
+     function result1()
+     {
+                 var score=0;
+                 if (document.getElementById("correct2").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct1").checked)
+                 {
+                   score++;      
+                 }
+                 if (document.getElementById("correct3").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct4").checked)
+                 {
+                   score++;
+                 }
+                 if (document.getElementById("correct4").checked)
+                 {
+                   score++;
+                 }
+                 m0= sessionStorage.getItem("s0"); 
+		 t2=parseInt(m0)+parseInt(score);
+                 sessionStorage.setItem("s1", t2);
+          if(score>=4)
+          {
+          window.open('Quiz_Page3.html','_self');
+          /*----------COMMENTED------------
+	  document.write("<html>")
+          document.write("<head>")
+          document.write("<link rel=\"stylesheet\" href=\"css.css\">")
+          document.write("</head>")
+          document.write("<body>")
+          document.write("<h3>")
+          document.write("1. What will be the output of the following Python function?<br>&nbsp;len([\"hey\",2, 4, 6])<br><input type=\"radio\" name=\"question1\">Error<br>")
+          document.write("<input type=\"radio\" name=\"question1\">3<br>")
+          document.write("<input type=\"radio\" name=\"question1\"  id \"correct3\">4<br>")
+          document.write("<input type=\"radio\" name=\"question1\">6<br><br><br>")         
+
+          document.write("2. What is the output?<br>&nbsp;s=set([0,1,2,3,3,3,4,4])<br>&nbsp;print(len(s))<br><input type=\"radio\" name=\"question2\">8<br>")
+          document.write("<input type=\"radio\" name=\"question1\">7<br>")
+          document.write("<input type=\"radio\" name=\"question1\">6<br>")
+          document.write("<input type=\"radio\" name=\"question1\"  id \"correct4\">5<br><br><br>")
+
+          document.write("quest3<br><input type=\"radio\" name=\"question3\">a<br>")
+          document.write("<input type=\"radio\" name=\"question1\">b<br>")
+          document.write("<input type=\"radio\" name=\"question1\">c<br>")
+          document.write("<input type=\"radio\" name=\"question1\">d<br><br><br>")
+
+          document.write("quest4<br><input type=\"radio\" name=\"question4\">a<br>")
+          document.write("<input type=\"radio\" name=\"question1\">b<br>")
+          document.write("<input type=\"radio\" name=\"question1\">c<br>")
+          document.write("<input type=\"radio\" name=\"question1\">d<br><br><br>")
+
+          document.write("quest5<br><input type=\"radio\" name=\"question5\">a<br>")
+          document.write("<input type=\"radio\" name=\"question1\">b<br>")
+          document.write("<input type=\"radio\" name=\"question1\">c<br>")
+          document.write("<input type=\"radio\" name=\"question1\">d<br>")
+          document.write("</h3>")
+          document.write("</body>")
+          document.write("</html>")*/
+          }
+	  else
+	  {
+          window.open('Quiz_Page5.html','_self');
+          }
+
+       }
+</script>
+<script type="text/javascript">
+     function result2()
+     {
+                 var score=0;
+                 if (document.getElementById("correct2").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct1").checked)
+                 {
+                   score++;      
+                 }
+                 if (document.getElementById("correct4").checked)
+                 {
+                   score++;       
+                 }
+                 if (document.getElementById("correct1").checked)
+                 {
+                   score++;
+                 }
+                 if (document.getElementById("correct1").checked)
+                 {
+                   score++;
+                 }
+
+                 var m0= sessionStorage.getItem("s0"); 
+		 let t2=parseInt(m0)+parseInt(score);
+                 sessionStorage.setItem("s1", t2);
+  
+          if(score<=4)
+          {
+          window.open('Quiz_Page3.html','_self');
+          }
+	  else
+	  {
+          window.open('Quiz_Page4.html','_self');
+          }
+
+       }
+</script>
+
+<script type="text/javascript">
+       var timer;
+       var ele=document.getElementById("timer");
+       (function(){  
+         var sec=0;
+         timer=setInterval(()=>{
+           ele.innerHTML="00:"+sec;
+           sec++;
+         }, 1000)
+       })()
+      </script>
+</h3>
+</body>
+</html>
+
