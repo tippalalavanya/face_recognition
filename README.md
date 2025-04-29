@@ -72,4 +72,4 @@ Please ensure proper testing and documentation for any changes.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](LICENSE)
